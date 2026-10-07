@@ -1,0 +1,8 @@
+{
+  "synthetic": {
+    "ssvep_amp": 10.0,
+    "noise_amp": 8.0,
+    "line_amp": 2.0,
+    "drift_amp": 0.0
+  }
+}

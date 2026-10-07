@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neurovision-ssvep"
+version = "0.1.0"
+description = "SSVEP music interface with synthetic EEG generation, replay and LSL decoding"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3", "scipy>=1.10,<2"]
+
+[project.optional-dependencies]
+lsl = ["pylsl>=1.17,<2"]
+osc = ["python-osc>=1.8,<2"]
+stimuli = ["psychopy>=2024.2,<2027", "pylsl>=1.17,<2", "python-osc>=1.8,<2"]
+plot = ["matplotlib>=3.7,<4"]
+dev = ["pytest>=7,<10", "build>=1,<2"]
+
+[project.scripts]
+neurovision = "neurovision.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["integration: local LSL/UDP integration checks"]

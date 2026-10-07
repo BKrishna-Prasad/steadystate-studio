@@ -1,0 +1,9 @@
+include README.md
+include requirements-tested.txt
+recursive-include configs *.json *.md
+recursive-include docs *.md *.png *.svg
+recursive-include data/synthetic *.csv *.md
+recursive-include sonic_pi *.rb
+recursive-include examples *.py
+recursive-include tests *.py
+recursive-include tools *.py

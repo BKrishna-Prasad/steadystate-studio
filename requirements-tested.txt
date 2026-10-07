@@ -1,0 +1,11 @@
+# Locally tested Windows / Python 3.11.10 software-check environment.
+# Optional graphics application and audio engine were not tested here.
+numpy==2.4.6
+scipy==1.17.1
+pylsl==1.18.5
+python-osc==1.10.2
+matplotlib==3.11.2
+pytest==9.1.1
+build==1.6.1
+setuptools==84.0.0
+wheel==0.48.0
